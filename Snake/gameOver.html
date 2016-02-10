@@ -12,9 +12,9 @@
 
             document.getElementById('tscore').innerHTML = (localStorage["snake_ts"] == null) ? "ERROR" : localStorage["snake_ts"];
         }
-        function back()
+        function tryAgain()
         {
-            window.location = "Snake/snake_index.html";
+            window.location = "snake_index.html";
         }
 
         function quit()
@@ -38,7 +38,7 @@
                     <span style="font-size:50px;color:black">High score: <span id="hscore">0</span>
             <br /><br />
             <br /><br />
-        <button style="height:40px;width:200px; background-color:rgb(7, 247, 71); font-family:Wide Latin" type="button" onclick="back()" id="BTryAgain">Try Again</button>
+        <button style="height:40px;width:200px; background-color:rgb(7, 247, 71); font-family:Wide Latin" type="button" onclick="tryAgain()" id="BTryAgain">Try Again</button>
             </div>
         </div>
 </body>
