@@ -7,6 +7,7 @@ var food;
 var direction;
 
 var eatPiece = new Audio('powerup.mp3');
+eatPiece.volume = 1;
 
 // sets up the main game board
 function Board()
@@ -316,10 +317,11 @@ function Food()
 function ImpossibleMain()
 {
     var audio = new Audio('audio_file.mp3');
+    audio.volume = 0.3;
     audio.play();
     game = new Board();
 
-    // size of squares --> snake segments and food pieces will be 25 x 25 pixels
+    // size of squares --> snake segments and food piees will be 25 x 25 pixels
     this.gridSize = 25;
 
     game.canvas.width = 1024;
