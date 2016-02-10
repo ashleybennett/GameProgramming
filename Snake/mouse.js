@@ -7,6 +7,7 @@ var food;
 var direction;
 
 var eatPiece = new Audio('powerup.mp3');
+eatPiece.volume = 1;
 
 // sets up the main game board
 function Board()
@@ -316,6 +317,7 @@ function Food()
 function MouseMain()
 {
     var audio = new Audio('audio_file.mp3');
+    audio.volume = 0.3;
     audio.play();
     game = new Board();
 
